@@ -1,0 +1,449 @@
+/* Geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3{
+    color: #333;
+}
+
+p{
+    color: #70747a;
+}
+
+/* Navbar */
+
+.navbar-container{
+    width: 100%;
+    height: 80px;
+    background-color: #232a31;
+    padding: 0 2rem;
+}
+
+nav{
+    position: relative;
+}
+
+.logo {
+    width: 50px;
+    margin-top: 15px;
+}
+
+.navbar-items{
+    position: absolute;
+    right: 0;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    display: inline-block;
+}
+
+.navbar-items li{
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
+.navbar-items a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.navbar-items a:hover{
+    font-size: 17px;
+    color: #00851f;
+}
+
+.navbar-items .default-btn{
+    padding: 10px 15px;
+    border: 2px solid #00851f;
+    color: #00851f;
+    border-radius: 5px;
+}
+
+.navbar-items .default-btn:hover{
+    color: white;
+    border: 2px solid white;
+    background-color: #00851f;
+}
+
+/* main banner */
+.main-banner{
+    background-image: url("../img/mainbanner.png");
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0;
+}
+
+.main-banner h1,
+.main-banner p{
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: black 3px 2px 3px;
+}
+
+.main-banner h1{
+    font-size: 54px;
+}
+
+.main-banner p{
+    font-size: 32px;
+}
+
+/* services */
+.services-container{
+    padding: 5rem 0;
+}
+
+.services-container ul{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.services-container li{
+    flex: 1 1 200px;
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.fas{
+    font-size: 60px;
+    margin-top: 15px;
+}
+
+.fa-shield-alt{
+    color: #2cc76a;
+}
+
+.fa-rocket{
+    color: #ef3f29;
+}
+.fa-comments{
+    color: #ef8f29;
+}
+
+.services-container h3{
+    margin-bottom: 25px;
+}
+
+.services-container p{
+    line-height: 24px;
+}
+
+/* prince and plans */
+.pricing-container{
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.pricing-container h2{
+    font-size: 36px;
+}
+.pricing-container p{
+    font-size: 20px;
+}
+
+.plans-container{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 50px auto 0;
+}
+
+.plan{
+    flex: 1;
+    max-width: 275px;
+    margin: 0  20px;
+}
+
+.plan ul{
+    padding: 0;
+}
+
+.plan li{
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    background-color: #e8e9ea;
+    color: #333;
+}
+
+.plan .price{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #2cc762;
+    color: #fff;
+    text-align: center;
+    line-height: 120px;
+    margin: 0 auto -50px;
+    font-size: 18px;
+    position: relative;
+}
+
+.plan .plan-name{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #232a31;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.plan .plan-btn{
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #2cc762;
+    font-size: 25px;
+    height: 70px;
+    line-height: 70px;
+    cursor: pointer;
+}
+
+.plan .recommended{
+    background-color: #f83b3b;
+}
+
+/* Search Domain */
+
+.searchdomain-container{
+    background-color: #2a3540;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.searchdomain-container h2{
+    font-size: 42px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.searchdomain-container p{
+    font-size: 24px;
+    color: #d2d2d2;
+    margin-bottom: 25px;
+}
+
+.searchdomain-container input{
+    display: block;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.searchdomain-container input[type="text"]{
+    width: 60%;
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.searchdomain-container input[type="submit"]{
+    font-size: 20px;
+    background-color: #2cc76a;
+    padding: 15px 30px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.searchdomain-container input[type="submit"]:hover{
+    color: #2cc76a;
+    border: 1px solid #2cc762;
+    background-color: transparent;
+}
+
+/* formulário */
+
+.mail-container{
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.mail-container h2{
+    font-size: 42px;
+    padding-bottom: 10px;
+}
+
+.mail-container p{
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.mail-container input{
+    border: 1px solid #c1c1c1;
+    border-radius: 4px;
+    font-size: 15px;
+    height: 50px;
+    width: 200px;
+    margin: 0 auto;
+    
+}
+
+.mail-container input[type="text"],
+.mail-container input[type="email"]{
+    padding: 20px;
+    margin: 15px;
+    margin-bottom: 30px;
+
+}
+
+textarea{
+    width: 500px;
+    height: 150px;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 1px solid #c1c1c1;
+    display: block;
+    margin: 0 auto;
+}
+
+.mail-container input[type="submit"]{
+    margin: 20px;
+    margin-bottom: 50px;
+    border: none;
+    background-color: #00d44a;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.mail-container input[type="submit"]:hover{
+    color: #00d44a;
+    background-color: transparent;
+    border: 1px solid #00d44a;
+}
+
+/* rodape */
+footer{
+    text-align: center;
+    border-bottom: 50px solid #232a31;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+/* responsividade */
+
+/* small laptops a partir de 1100 */
+@media (max-width: 1100px){
+    
+    .plans-container{
+        width: 95%;
+    }
+
+    .plan{
+        margin: 0 5px;
+    }
+}
+
+
+/* Tablet a partir de 900px */
+@media (max-width: 900px){
+
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .main-banner p{
+        margin: 0 6rem;
+    }
+
+    .plans-container {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 30%;
+    }
+
+    .plan{
+        padding-bottom: 10px;
+    }
+
+    .searchdomain-container h2{
+        padding: 0 6rem;
+    }
+}
+
+
+/* Celular 576px */
+@media (max-width: 576px){
+
+    .navbar-items li{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .main-banner p{
+        margin: 0 2rem;
+        font-size: 20px;
+    }
+
+    .services-container ul{
+        flex-direction: column;
+    }
+
+    .plans-container{
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .plan{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .searchdomain-container h2{
+        font-size: 24px;
+        padding: 0 2rem;
+    }
+
+    .searchdomain-container p{
+        font-size: 15px;
+    }
+
+    .searchdomain-container input[type="text"],
+    .searchdomain-container input[type="submit"]{
+        width: 95%;
+        font-size: 15px;
+    }
+
+    .mail-container{
+        padding: 3rem 2rem;
+    }
+
+    .mail-container input[type="text"],
+    .mail-container input[type="email"],
+    .mail-container input[type="submit"],
+    .mail-container textarea{
+        width: 95%;
+        margin: 10px 0;
+        
+    }
+
+    .mail-container textarea{
+        margin-left: 2%;
+    }
+
+    .mail-container h2{
+        font-size: 24px;
+    }
+
+    .mail-container p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 400px){
+    .navbar-items li{
+        font-size: 10px;
+        margin-left: 8px;
+    }
+}
